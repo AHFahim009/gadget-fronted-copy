@@ -1,6 +1,6 @@
 "use client";
 
-import { useGetSingleProductsQuery } from "@/redux/api/endpoints/product.api";
+// import { useGetSingleProductsQuery } from "@/redux/api/endpoints/product.api";
 import { useParams } from "next/navigation";
 
 const Page = () => {
