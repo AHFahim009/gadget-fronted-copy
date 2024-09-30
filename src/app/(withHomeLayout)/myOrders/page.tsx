@@ -18,26 +18,6 @@ import { TOrderRes } from "@/applicationTypes/applicationTypes";
 import { formateDate } from "@/helpers/formateDate";
 import { TShoppingCart } from "@/redux/slices/cart.slice";
 
-type TOrder = {
-  id: string;
-  createdAt: string;
-  name: string;
-  address: string;
-  totalQuantity: number;
-  totalPrice: number;
-};
-
-const mockOrders: TOrder[] = [
-  {
-    id: "1",
-    createdAt: "2024/09/30",
-    name: "John Doe",
-    address: "123 Main St, City, Country",
-    totalQuantity: 3,
-    totalPrice: 150.99,
-  },
-];
-
 export default function Page() {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState("");
