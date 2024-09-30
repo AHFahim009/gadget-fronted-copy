@@ -60,7 +60,7 @@ const Page = () => {
       const result = handleResponse(res);
 
       if (result?.data) {
-        router.push("/checkout");
+        router.push("/myOrders");
         dispatch(clearCart());
         toast.message(result.message);
       }
